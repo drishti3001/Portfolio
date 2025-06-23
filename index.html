@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.png" class="logo">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <h1>Hi, I am Drishti<br>a student <span class="typewritter"> at VIT</span></h1>
+            </div>
+            <div class="header-image-wrapper">
+                <img src="IMG_2940.png" alt="Drishti" class="header-image">
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="IMG_2594.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="para">I love bringing ideas to life, turning simple thoughts into digital spaces that feel easy and thoughtful. With every project, I try to mix creativity with clarity, and function with feeling.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="Skills">
+                        <div class="skill-card">
+                            <h3>Front-End Development</h3>
+                            <div class="skill-icons">
+                                <img src="html_icon.png" alt="HTML">
+                                <img src="css_icon.webp" alt="CSS">
+                                <img src="javascript_icon.png" alt="JavaScript">
+                                <img src="bootstrap_icon.png" alt="Bootstrap">
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <h3>Programming Languages</h3>
+                            <div class="skill-icons">
+                                <img src="c_logo.png" alt="C">
+                                <img src="c++_logo.jpg" alt="C++">
+                                <img src="java_logo.jpg" alt="Java">
+                                <img src="Python_logo.webp" alt="Python">
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <h3>AI & Backend</h3>
+                            <div class="skill-icons">
+                                <img src="Numpy_logo.png" alt="NumPy">
+                                <img src="Pandas_logo.png" alt="Pandas">
+                                <img src="Matplotlib_logo.png" alt="Matplotlib">
+                                <img src="plot_logo.png" alt="Plotly">
+                                <img src="Flask_logo.png" alt="Flask">
+                                <img src="gradio_logo.jpg" alt="Gradio">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-contents" id="Experience">
+                        <div class="experience-certifications">
+                            <div class="exp-cert-card">
+                                <h3>Experience</h3>
+                                <h4>Frontend Intern at SISL INFO TECH</h4>
+                                <p>Worked as a frontend developer intern at SISL Pvt Ltd in Delhi under the guidance of a team leader to build the RMS portal.</p>
+                            </div>
+                            <div class="exp-cert-card">
+                                <h3>Certifications</h3>
+                                <h4>IBM Gen-AI Certificate</h4>
+                                <p>Issued by IBM Career Education Program<br>June 12th 2025</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-contents" id="Education">
+                        <div class="education-wrapper">
+                            <div class="education-card">
+                                <div class="edu-text">
+                                    <h3>VIT Vellore</h3>
+                                    <p>Persuing B.Tech in CSE Core with 8.06 CGPA</p>
+                                </div>
+                                <div class="edu-image">
+                                    <img src="VIT.png" alt="VIT">
+                                </div>
+                            </div>
+                            <div class="education-card">
+                                <div class="edu-text">
+                                    <h3>Alpine International School</h3>
+                                    <p>Completed my Senior Secondary education with 88.6%</p>
+                                </div>
+                                <div class="edu-image">
+                                    <img src="Alpine.png" alt="Alpine">
+                                </div>
+                            </div>
+                            <div class="education-card">
+                                <div class="edu-text">
+                                    <h3>Pinegrove School</h3>
+                                    <p>Completed my Secondary with 93%</p>
+                                </div>
+                                <div class="edu-image">
+                                    <img src="Pinegrove.png" alt="Pinegrove">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects Section -->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Medibot.avif" alt="MediBot">
+                    <div class="layer">
+                        <h3>MediBot</h3>
+                        <p>An AI-powered medical chatbot using RAG and a curated medical knowledge base.</p>
+                        <a href="https://github.com/drishti3001/Med_Buddy"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="notes.jpg" alt="Notes.io">
+                    <div class="layer">
+                        <h3>Notes.io</h3>
+                        <p>A web app for secure note-taking with sign-in and edit features.</p>
+                        <a href="https://github.com/drishti3001/notez"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="bookrecommender.png" alt="Book Recommender">
+                    <div class="layer">
+                        <h3>Semantic Book Recommender</h3>
+                        <p>Uses NLP, LLM APIs, and Gradio for context-aware book suggestions.</p>
+                        <a href="https://github.com/drishti3001/semanticBookRecommender"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Let's Connect</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> drishtigarg152004@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 9815441399</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/drishti__garg?igsh=MTRjbzJicXo3empwaw=="><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/drishti-garg-6423bb279?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/drishti3001"><i class="fa-brands fa fa-github"></i></a>
+                    </div>
+                    <a href="Resume.pdf" download class="btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Enter your name" required>
+                        <input type="text" name="Email" placeholder="Enter your email" required>
+                        <textarea name="Message" rows="6" placeholder="Write your message" required></textarea>
+                        <button type="submit" class="btn3">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>Copyright @ Drishti. Made with <i class="fa-regular fa-heart"></i></p>
+    </div>
+</body>
+</html>
